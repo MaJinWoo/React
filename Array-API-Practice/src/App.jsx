@@ -8,12 +8,12 @@ function App() {
   const [query, setQuery] = useState(""); // input을 위한 value
 
   const style = {
-    'textAlign':'center',
+    textAlign:'center',
   }
   const arrayStyle = {
-    'border':'1px solid black',
-    'margin':'10px',
-    'padding':'15px'
+    border:'1px solid black',
+    margin:'10px',
+    padding:'15px'
   }
   const handleForEach = function(){
     let temp = "";
