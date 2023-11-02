@@ -7,14 +7,6 @@ function App() {
   const [result, setResult] = useState("");
   const [query, setQuery] = useState(""); // input을 위한 value
 
-  const style = {
-    textAlign:'center',
-  }
-  const arrayStyle = {
-    border:'1px solid black',
-    margin:'10px',
-    padding:'15px'
-  }
   const handleForEach = function(){
     let temp = "";
     array.forEach(function(item, index){
@@ -129,7 +121,7 @@ function App() {
   }
 
   return (
-    <div style={style}>
+    <div className='global'>
       <h1>Standard반 배열 API 테스트 by Jinwoo Ma</h1>
       <input style={{
        'margin':'5px',
@@ -153,10 +145,10 @@ function App() {
         <button onClick = {handleSort}>sort</button>
         <button onClick = {handleJoin}>join</button>
       </div>
-      <div style={arrayStyle}>
+      <div className='array-style'>
         <strong>원본배열 :</strong> {array.join(", ")}
       </div>
-      <div style={arrayStyle}>
+      <div className='array-style'>
         <strong>결과물 :</strong> {result}
       </div>
     </div>
